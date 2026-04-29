@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가입창</title>
+</head>
+<body>
+    <div>
+        <h1>회원가입</h1>
+        <form name="" method="get" action="aaa.html">
+            <fieldset>
+                <legend>필수입력 정보</legend>
+                <label>아이디</label> <input type="text"><br/>
+                <label>비밀번호</label> <input type="password"><br/>
+                <label>이름</label> <input type="text"><br/>
+                <label>이메일</label> <input type="email"><br/>
+                <label>전화번호</label> <input type="tel"><br/>
+            </fieldset>
+
+            <fieldset>
+                <legend>선택입력 정보</legend>
+              프로필 사진 <input type="file" name="filename" /><br/>
+              생년월일 <input type="date"><br/>
+                직업 <select name="job">
+                <option value="1">회사원</option>
+                <option value="2">기술직</option>
+                <option value="3" selected="selected">전문직</option>
+            </select><br/>
+                자기소개 <textarea cols="50" rows="5" placeholder="자기소개를 50자이상입력"></textarea><br/>
+
+            </fieldset>
+            <button type="submit">가입하기</button>
+            <button type="reset">취소</button>
+
+            <style>
+    div {
+        width: 700px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgb(227, 236, 215);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(97, 39, 39, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    fieldset {
+        margin-bottom: 15px;
+        padding: 15px;
+        border: 1px solid #ccc;
+    }
+
+    legend {
+        font-weight: bold;
+    }
+
+    label {
+        display: inline-block;
+        width: 100px;
+        margin-bottom: 5px;
+    }
+
+    
+
+    input, select, textarea {
+        padding: 5px;
+        margin-bottom: 5px;
+        width: 200px;
+    }
+
+    textarea {
+        width: 100%;
+        resize: none;
+    }
+
+    button {
+        width: %;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button[type="submit"] {
+        background-color: #ffb222;
+        color: rgb(0, 0, 0);
+    }
+
+    button[type="reset"] {
+        background-color: #fff6f6;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+    button[type="submit"]:hover {
+        background-color: #ff9a00;
+    }
+</style>
+            </style>
+        </form>
+</body>
+</html>
